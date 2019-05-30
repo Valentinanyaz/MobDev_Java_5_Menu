@@ -58,4 +58,16 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
+            @Override
+            public void onClick(R.id.menu_exit) {
+            // TODO Auto-generated method stub
+            finish();
+            System.exit(0);
+        }
+
+    }
+    }
+
 }

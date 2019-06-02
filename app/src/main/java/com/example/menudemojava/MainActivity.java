@@ -55,19 +55,20 @@ public class MainActivity extends AppCompatActivity {
         sb.append("\r\n title: " + item.getTitle());
         tv.setText(sb.toString());
 
+        if(item.getItemId() == R.id.menu_exit) {
+            finish();
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
-
-
-            @Override
-            public void onClick(R.id.menu_exit) {
-            // TODO Auto-generated method stub
-            finish();
-            System.exit(0);
-        }
-
-    }
     }
 
-}
+
+
+
+
+
+
+
+
